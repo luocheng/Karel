@@ -3,17 +3,19 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Karel the Robot's documentation!
+欢迎来到Karel机器人教程!
 ===========================================
 
-Contents:
+目录:
 
 .. toctree::
    :maxdepth: 2
+    
+   1. 赢得编程领域的黑带
+   2. 
 
 
-
-Indices and tables
+索引和搜索
 ==================
 
 * :ref:`genindex`
