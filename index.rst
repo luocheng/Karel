@@ -14,7 +14,7 @@
    1. 简介
 
 
-Indices and tables
+索引和搜索
 ==================
 
 * :ref:`genindex`
