@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-欢迎来到 Karel the Robot's 教程!
+欢迎来到Karel机器人教程!
 ===========================================
 
 Contents:
