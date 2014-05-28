@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>15. 递归 &mdash; Karel机器人教材</title>
+    <title>11. 变量 &mdash; Karel机器人教材</title>
     
     <link rel="stylesheet" href="_static/agogo.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -25,11 +25,8 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/translations.js"></script>
     <link rel="top" title="Karel机器人教材" href="index.html" />
-<<<<<<< HEAD
-    <link rel="prev" title="3. 启动 Karel" href="p03.html" /> 
-=======
-    <link rel="prev" title="14. 随机性" href="p14.html" /> 
->>>>>>> 993dfc97be6b4ee60a715595cc14b46fe9b5d552
+    <link rel="next" title="15. 递归" href="p15.html" />
+    <link rel="prev" title="10. 自定义命令" href="p10.html" /> 
   </head>
   <body>
     <div class="header-wrapper">
@@ -37,12 +34,10 @@
         <div class="headertitle"><a
           href="index.html">Karel机器人教材</a></div>
         <div class="rel">
-<<<<<<< HEAD
-          <a href="p03.html" title="3. 启动 Karel"
-=======
-          <a href="p14.html" title="14. 随机性"
->>>>>>> 993dfc97be6b4ee60a715595cc14b46fe9b5d552
+          <a href="p10.html" title="10. 自定义命令"
              accesskey="P">上一页</a> |
+          <a href="p15.html" title="15. 递归"
+             accesskey="N">下一页</a> |
           <a href="genindex.html" title="总目录"
              accesskey="I">索引</a>
         </div>
@@ -58,21 +53,45 @@
           <div class="body">
             
   <div class="section" id="id1">
-<h1>15. 递归<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<h1>11. 变量<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
 <div class="section" id="id2">
-<h2>15.1 目标<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<h2>11.1 目标<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="karel">
+<h2>11.2 Karel的成长<a class="headerlink" href="#karel" title="永久链接至标题">¶</a></h2>
 </div>
 <div class="section" id="id3">
-<h2>15.2 递归如何工作<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<h2>11.3 变量的目的<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
 </div>
 <div class="section" id="id4">
-<h2>15.3 基本情形<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<h2>11.4 变量的类型<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="gpspring">
+<h2>11.5 使用GPS装备和pring命令<a class="headerlink" href="#gpspring" title="永久链接至标题">¶</a></h2>
 </div>
 <div class="section" id="id5">
-<h2>15.4 回顾钻石楼梯<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
+<h2>11.6 自定义函数<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
 </div>
 <div class="section" id="id6">
-<h2>15.5 相互递归命令<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
+<h2>11.7 度量墙的长度<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="id7">
+<h2>11.8 创建和实例化数值变量<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="id8">
+<h2>11.9 改变数值变量的值<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="inc-dec">
+<h2>11.10 使用inc()和dec()函数<a class="headerlink" href="#inc-dec" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="id9">
+<h2>11.11 比较运算<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="id10">
+<h2>11.12 文本字符串<a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="id11">
+<h2>11.13 局部和全局变量<a class="headerlink" href="#id11" title="永久链接至标题">¶</a></h2>
 </div>
 </div>
 
@@ -94,18 +113,23 @@
 <li class="toctree-l1"><a class="reference internal" href="p08.html">8. 条件</a></li>
 <li class="toctree-l1"><a class="reference internal" href="p09.html">9. 条件循环</a></li>
 <li class="toctree-l1"><a class="reference internal" href="p10.html">10. 自定义命令</a></li>
-<li class="toctree-l1"><a class="reference internal" href="p11.html">11. 变量</a></li>
-<li class="toctree-l1"><a class="reference internal" href="p12.html">12. 列表</a></li>
-<li class="toctree-l1"><a class="reference internal" href="p13.html">13. 逻辑之旅</a></li>
-<li class="toctree-l1"><a class="reference internal" href="p14.html">14. 随机性</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">15. 递归</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id2">15.1 目标</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">15.2 递归如何工作</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id4">15.3 基本情形</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id5">15.4 回顾钻石楼梯</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id6">15.5 相互递归命令</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">11. 变量</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">11.1 目标</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#karel">11.2 Karel的成长</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">11.3 变量的目的</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">11.4 变量的类型</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gpspring">11.5 使用GPS装备和pring命令</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">11.6 自定义函数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">11.7 度量墙的长度</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">11.8 创建和实例化数值变量</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">11.9 改变数值变量的值</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#inc-dec">11.10 使用inc()和dec()函数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">11.11 比较运算</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id10">11.12 文本字符串</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id11">11.13 局部和全局变量</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="p15.html">15. 递归</a></li>
 </ul>
 
           <h3 style="margin-top: 1.5em;">搜索</h3>
@@ -126,16 +150,14 @@
     <div class="footer-wrapper">
       <div class="footer">
         <div class="left">
-<<<<<<< HEAD
-          <a href="p03.html" title="3. 启动 Karel"
-=======
-          <a href="p14.html" title="14. 随机性"
->>>>>>> 993dfc97be6b4ee60a715595cc14b46fe9b5d552
+          <a href="p10.html" title="10. 自定义命令"
              >上一页</a> |
+          <a href="p15.html" title="15. 递归"
+             >下一页</a> |
           <a href="genindex.html" title="总目录"
              >索引</a>
             <br/>
-            <a href="_sources/p15.txt"
+            <a href="_sources/p11.txt"
                rel="nofollow">显示源代码</a>
         </div>
 

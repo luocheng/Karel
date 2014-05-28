@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>15. 递归 &mdash; Karel机器人教材</title>
+    <title>12. 列表 &mdash; Karel机器人教材</title>
     
     <link rel="stylesheet" href="_static/agogo.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -25,11 +25,8 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/translations.js"></script>
     <link rel="top" title="Karel机器人教材" href="index.html" />
-<<<<<<< HEAD
-    <link rel="prev" title="3. 启动 Karel" href="p03.html" /> 
-=======
-    <link rel="prev" title="14. 随机性" href="p14.html" /> 
->>>>>>> 993dfc97be6b4ee60a715595cc14b46fe9b5d552
+    <link rel="next" title="15. 递归" href="p15.html" />
+    <link rel="prev" title="11. 变量" href="p11.html" /> 
   </head>
   <body>
     <div class="header-wrapper">
@@ -37,12 +34,10 @@
         <div class="headertitle"><a
           href="index.html">Karel机器人教材</a></div>
         <div class="rel">
-<<<<<<< HEAD
-          <a href="p03.html" title="3. 启动 Karel"
-=======
-          <a href="p14.html" title="14. 随机性"
->>>>>>> 993dfc97be6b4ee60a715595cc14b46fe9b5d552
+          <a href="p11.html" title="11. 变量"
              accesskey="P">上一页</a> |
+          <a href="p15.html" title="15. 递归"
+             accesskey="N">下一页</a> |
           <a href="genindex.html" title="总目录"
              accesskey="I">索引</a>
         </div>
@@ -58,21 +53,42 @@
           <div class="body">
             
   <div class="section" id="id1">
-<h1>15. 递归<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<h1>12. 列表<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
 <div class="section" id="id2">
-<h2>15.1 目标<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<h2>12.1 目标<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="python">
+<h2>12.2 与Python的兼容性<a class="headerlink" href="#python" title="永久链接至标题">¶</a></h2>
 </div>
 <div class="section" id="id3">
-<h2>15.2 递归如何工作<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<h2>12.3 创建列表<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
 </div>
 <div class="section" id="id4">
-<h2>15.3 基本情形<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<h2>12.4 通过索引获取列表元素<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
 </div>
 <div class="section" id="id5">
-<h2>15.4 回顾钻石楼梯<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
+<h2>12.5 向列表追加元素<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="pop">
+<h2>12.6 通过pop()函数移除列表元素<a class="headerlink" href="#pop" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="del">
+<h2>12.7 通过del命令删除元素<a class="headerlink" href="#del" title="永久链接至标题">¶</a></h2>
 </div>
 <div class="section" id="id6">
-<h2>15.5 相互递归命令<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
+<h2>12.8 列表的长度<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="id7">
+<h2>12.9 解析列表<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="robot">
+<h2>12.10 记录robot的游走路径<a class="headerlink" href="#robot" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="id8">
+<h2>12.11 通过列表重放robot的行走轨迹<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="id9">
+<h2>12.12 列表中的列表<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h2>
 </div>
 </div>
 
@@ -95,17 +111,22 @@
 <li class="toctree-l1"><a class="reference internal" href="p09.html">9. 条件循环</a></li>
 <li class="toctree-l1"><a class="reference internal" href="p10.html">10. 自定义命令</a></li>
 <li class="toctree-l1"><a class="reference internal" href="p11.html">11. 变量</a></li>
-<li class="toctree-l1"><a class="reference internal" href="p12.html">12. 列表</a></li>
-<li class="toctree-l1"><a class="reference internal" href="p13.html">13. 逻辑之旅</a></li>
-<li class="toctree-l1"><a class="reference internal" href="p14.html">14. 随机性</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">15. 递归</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id2">15.1 目标</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">15.2 递归如何工作</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id4">15.3 基本情形</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id5">15.4 回顾钻石楼梯</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id6">15.5 相互递归命令</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">12. 列表</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">12.1 目标</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#python">12.2 与Python的兼容性</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">12.3 创建列表</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">12.4 通过索引获取列表元素</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">12.5 向列表追加元素</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pop">12.6 通过pop()函数移除列表元素</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#del">12.7 通过del命令删除元素</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">12.8 列表的长度</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">12.9 解析列表</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#robot">12.10 记录robot的游走路径</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">12.11 通过列表重放robot的行走轨迹</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">12.12 列表中的列表</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="p15.html">15. 递归</a></li>
 </ul>
 
           <h3 style="margin-top: 1.5em;">搜索</h3>
@@ -126,16 +147,14 @@
     <div class="footer-wrapper">
       <div class="footer">
         <div class="left">
-<<<<<<< HEAD
-          <a href="p03.html" title="3. 启动 Karel"
-=======
-          <a href="p14.html" title="14. 随机性"
->>>>>>> 993dfc97be6b4ee60a715595cc14b46fe9b5d552
+          <a href="p11.html" title="11. 变量"
              >上一页</a> |
+          <a href="p15.html" title="15. 递归"
+             >下一页</a> |
           <a href="genindex.html" title="总目录"
              >索引</a>
             <br/>
-            <a href="_sources/p15.txt"
+            <a href="_sources/p12.txt"
                rel="nofollow">显示源代码</a>
         </div>
 
